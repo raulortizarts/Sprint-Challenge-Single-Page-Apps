@@ -19,16 +19,16 @@ export default function TabNav() {
     const panes = [
         { menuItem:
             {key: 'home', icon: 'home', content: 'home' },
-            render: () => <Tab.Pane><Route path = '/' exact component = {WelcomePage} /> </Tab.Pane>},
+            render: () => <Tab.Pane><Route path = '/' exact component = {WelcomePage} /><WelcomePage /></Tab.Pane> },
         { menuItem:
             {key: 'character', icon: 'users', content: 'character' },
-            render: () => <Route path = '/character' component = {CharacterList} />},
+            render: () => <Tab.Pane><Route path = '/character' component = {CharacterList} /><CharacterList /></Tab.Pane>},
         { menuItem:
             {key: 'location', icon: 'map outline', content: 'location' },
-            render: () => <Route path = '/location' component = {LocationList} />},
+            render: () => <Tab.Pane><Route path = '/location' component = {LocationList} /><LocationList /></Tab.Pane>},
          { menuItem:
              {key: 'episode', icon: 'map outline', content: 'episode' },
-             render: () => <Route path = '/episode' component = {EpisodeList} />}
+             render: () => <Tab.Pane><Route path = '/episode' component = {EpisodeList} /><EpisodeList /></Tab.Pane>}
         
         ]
     return (
