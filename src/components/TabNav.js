@@ -4,6 +4,7 @@ import { NavLink, Route } from "react-router-dom";
 import WelcomePage from "./WelcomePage";
 import CharacterList from "./CharacterList";
 import LocationList from "./LocationsList"
+import EpisodeList from "./EpisodeList"
 
 // TODO: Add missing menu/tabs/nav below
 
@@ -25,9 +26,9 @@ export default function TabNav() {
         { menuItem:
             {key: 'location', icon: 'map outline', content: 'location' },
             render: () => <Route path = '/location' exact component = {LocationList} />},
-        // { menuItem:
-        //     {key: 'episode', icon: 'map outline', content: 'episode' },
-        //     render: () => <Route path = '/episode' exact component = {EpisodeList} />},
+         { menuItem:
+             {key: 'episode', icon: 'map outline', content: 'episode' },
+             render: () => <Route path = '/episode' exact component = {EpisodeList} />},
         
         ]
     return (

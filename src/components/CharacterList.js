@@ -31,6 +31,9 @@ export default function CharacterList() {
             <Card.Description>
               {character.location.name}
             </Card.Description>
+            <Card.Description>
+              {character.origin.name}
+            </Card.Description>
           </Card.Content>
 
         </card>
